@@ -1,0 +1,97 @@
+.portfolio__title-invisible {
+  display: none;
+}
+.portfolio__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio__button:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio__button-gray {
+  cursor: pointer;
+  color: $primary-text-color;
+  background-color: $button-color;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+  border-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent1-color;
+    color: $accent2-color;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+.portfolio__card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+/*top goes to main*/
+
+.portfolio__item {
+  flex-basis: calc((100% - 60px) / 3);
+  display: block;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+  &:hover .portfolio__overlay,
+  &:focus .portfolio__overlay {
+    transform: translateY(0%);
+  }
+}
+
+.portfolio__overlay {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 0%;
+  top: 0%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms $timing-function;
+}
+.portfolio__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__overlay-text {
+  width: 322px;
+  height: 168px;
+  margin: 63px 24px;
+  font-size: 18px;
+  line-height: 1.556;
+  color: $accent2-color;
+}
+.portfolio__title {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 4px;
+}
+.portfolio__description {
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 1.875;
+}
+.portfolio__border {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
+}

@@ -1,0 +1,35 @@
+.main__title {
+  display: none;
+}
+.main__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+.main__subtitle {
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.144;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.main__description {
+  color: $secondary-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.main__card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.main__icon {
+  background-color: $button-color;
+  max-width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

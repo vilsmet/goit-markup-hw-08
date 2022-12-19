@@ -1,0 +1,47 @@
+.customers__queue {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.customers__title {
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.customers__representative {
+  flex-basis: calc((100% - 150px) / 6);
+  height: 92px;
+}
+
+.customers__item-fill {
+  fill: currentColor;
+}
+.customers__card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.customers__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $svgfill;
+  border-radius: 4px;
+  color: $svgfill;
+  max-width: 170px;
+  height: 92px;
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent1-color;
+    border: 1px solid $accent1-color;
+    cursor: pointer;
+  }
+}

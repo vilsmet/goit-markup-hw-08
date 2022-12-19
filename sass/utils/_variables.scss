@@ -1,0 +1,35 @@
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$accent1-color: #2196f3;
+$accent2-color: #ffffff;
+$button-color: #f5f4fa;
+$background-color: #2f303a;
+$button-active: #188ce8;
+$svgfill: #AFB1B8;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+a {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $primary-text-color;
+  background-color: $accent2-color;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
