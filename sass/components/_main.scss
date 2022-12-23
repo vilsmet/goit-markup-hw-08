@@ -2,7 +2,17 @@
   display: none;
 }
 .main__item {
-  flex-basis: calc((100% - 90px) / 4);
+  max-width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+  // flex-basis: calc((100% - 90px) / 4);
+}
+.main__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 .main__subtitle {
   color: $primary-text-color;
@@ -20,13 +30,21 @@
   line-height: 1.71;
 }
 .main__card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .main__icon {
   background-color: $button-color;
-  max-width: 270px;
+  max-width: 450px;
   height: 120px;
   border-radius: 4px;
   display: flex;

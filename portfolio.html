@@ -265,7 +265,7 @@
     <!--Footer-->
     <footer class="footer">
       <div class="footer__footer-center container">
-        <div>
+        <div class="footer__block">
           <a href="" class="logo">Web<span class="logo__black--inverse">Studio</span></a>
           <address>
             <p class="footer__street">м. Київ пр-т Лесі Українки, 26</p>
@@ -281,41 +281,42 @@
             </ul>
           </address>
         </div>
-        <div class="footer__social">
+        <!-- <div class="footer__social"> -->
+        <div class="footer__block">
+          <h2 class="footer__join">Приєднуйтеся</h2>
+          <ul class="social__icon-set">
+            <li>
+              <a class="social__icon social__icon--footer" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__icon social__icon--footer" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__icon social__icon--footer" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__icon social__icon--footer" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
           <div>
-            <h2 class="footer__join">Приєднуйтеся</h2>
-            <ul class="social__icon-set">
-              <li>
-                <a class="social__icon social__icon--footer" href="">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="social__icon social__icon--footer" href="">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="social__icon social__icon--footer" href="">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="social__icon social__icon--footer" href="">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__form">
             <h2 class="footer__form-title">Підпишіться на розсилку</h2>
             <form class="footer__form-details" autocomplete="on">
               <label for="email"></label>
@@ -330,15 +331,16 @@
               <!-- <input type="radio" value="junior" name="" id=""> -->
               <!-- <input type="datetime-local" name="date" id="date"> -->
               <!-- <input type="file"> -->
-              <button class="footer__button" type="submit">
-                Підписатися
-                <svg class="footer-button-form" width="24" height="24">
-                  <use href="./images/icons.svg#telegram"></use>
-                </svg>
-              </button>
             </form>
           </div>
+          <button class="footer__button" type="submit">
+            Підписатися
+            <svg class="footer__button-form" width="24" height="24">
+              <use href="./images/icons.svg#telegram"></use>
+            </svg>
+          </button>
         </div>
+        <!-- </div> -->
       </div>
     </footer>
   </body>

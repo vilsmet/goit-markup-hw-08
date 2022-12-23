@@ -11,6 +11,10 @@
   background-size: cover;
   background-color: rgba(196, 196, 196, 1);
   background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+    border-top: 1px solid #ececec;
+  }
 }
 .hero__title {
   color: $accent2-color;
@@ -20,6 +24,11 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  @media screen and (max-width: 767px) {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+  }
 }
 .hero__button {
   cursor: pointer;

@@ -1,25 +1,78 @@
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    border-bottom: none;
+  }
+}
+
+.header .logo {
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  @media screen and (max-width: 1199.5px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .header__header-center {
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
   display: flex;
   align-items: center;
+
+  //   @media screen and (min-width: 480px) {
+  //  display: flex;
+  //  justify-content: space-between;
+  //   }
 }
 .header__navigation {
   display: flex;
-  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+  }
+  // margin-right: auto;
+}
+.header__form-list {
+  list-style: none;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 75%;
+  }
 }
 .header__list {
-  list-style: none;
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+
   display: flex;
-  margin-left: 93px;
+  margin-right: auto;
 }
+//
+// margin-left: 93px;
+
+// .header__list1 {
+
+// }
 .header__item {
   padding: 32px 0;
   position: relative;
-
   &:not(:last-child) {
     margin-right: 50px;
+  }
+}
+.header__form-item {
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
   }
 }
 .header__link {
@@ -34,6 +87,11 @@
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
   text-decoration: none;
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+  }
 
   &--current {
     color: $accent1-color;
@@ -53,9 +111,12 @@
     transform: translate(-50%, 0%);
     display: inline-block;
     border-radius: 2px;
-    width: 108%;
+    width: 100%;
     height: 4px;
     background-color: $accent1-color;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 .header__contact {
@@ -81,6 +142,17 @@
 .header__info {
   display: flex;
   list-style: none;
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .header__contacts {
   display: flex;
@@ -88,8 +160,97 @@
 
   &:not(:last-child) {
     margin-right: 40px;
+    @media screen and (max-width: 1199px) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
 }
 .header__margin {
   margin-left: 10px;
+  @media screen and (max-width: 1199px) {
+    margin-left: 8px;
+  }
+}
+.header__button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  // margin: 10px 0;
+  &:hover,
+  &focus {
+    cursor: pointer;
+    fill: $accent1-color;
+  }
+}
+.header__icon-close {
+  display: none;
+  z-index: 100;
+}
+.header__button.is-open .header__icon-close {
+  display: block;
+}
+.header__button.is-open .header__icon-menu {
+  display: none;
+}
+.header__mobile-menu {
+  display: none;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  background-color: $accent2-color;
+  padding: 48px 40px;
+  text-align: left;
+  &.is-open {
+    display: block;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  // @media screen and (min-width: 768px) {
+  //   display: none;
+  // }
+}
+.header__social-list {
+  display: flex;
+  margin-top: 64px;
+}
+.header__social-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  color: $accent1-color;
+}
+.header__social-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.header__social-item:not(:first-child) {
+  padding-left: 10px;
+}
+.header__form-tel {
+  color: $accent1-color;
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+
+}
+.header__form-mail {
+  color: $secondary-text-color;
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.667;
+  margin-top: 32px;
 }

@@ -24,6 +24,17 @@
     <header class="header">
       <div class="container header__header-center">
         <a href="" class="logo">Web<span class="logo__black">Studio</span></a>
+        <button
+          type="button"
+          class="header__button is-open"
+          data-header__button
+          aria-expanded="false"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="header__icon-close" href="./images/icons.svg#close"></use>
+            <use class="header__icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item"><a href="" class="header__link header__link--current">Студія</a></li>
@@ -50,6 +61,21 @@
             </a>
           </li>
         </ul>
+        <div class="header__mobile-menu is-open" data-menu>
+          <ul class="header__form-list"> 
+            <li class="header__form-item"><a href="" class="header__link header__link--current">Студія</a></li>
+            <li class="header__form-item"><a href="./portfolio.html" class="header__link">Портфоліо</a></li>
+            <li class="header__form-item"><a href="" class="header__link">Контакти</a></li>
+          </ul>
+          <a class="header__form-tel" href="tel:+380961111111" >+38 096 111 11 11</a>
+          <a class="header__form-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <ul class="header__social-list">
+          <li class="header__social-item">Instagram</li>
+          <li class="header__social-item">Twitter</li>
+          <li class="header__social-item">Facebook</li>
+          <li class="header__social-item">Linkedin</li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--Main Block-->
@@ -141,7 +167,12 @@
           <h2 class="staff__title">Наша команда</h2>
           <ul class="staff__card-set">
             <li class="staff__item">
-              <img src="images/a4.jpg" alt="Photo of Igor Demyanenko" width="270" class="box" />
+              <img
+                src="images/a4.jpg"
+                alt="Photo of Igor Demyanenko"
+                width="270"
+                class="staff__item--frame"
+              />
               <div class="staff__info">
                 <h3 class="staff__name">Ігор Дем'яненко</h3>
                 <p class="staff__position">Product Designer</p>
@@ -178,7 +209,12 @@
               </div>
             </li>
             <li class="staff__item">
-              <img src="images/a5.jpg" alt="Photo of Olga Riepina" width="270" class="box" />
+              <img
+                src="images/a5.jpg"
+                alt="Photo of Olga Riepina"
+                width="270"
+                class="staff__item--frame"
+              />
               <div class="staff__info">
                 <h3 class="staff__name">Ольга Рєпіна</h3>
                 <p class="staff__position">Frontend Developer</p>
@@ -215,7 +251,12 @@
               </div>
             </li>
             <li class="staff__item">
-              <img src="images/a6.jpg" alt="Photo of Mykola Tarasov" width="270" class="box" />
+              <img
+                src="images/a6.jpg"
+                alt="Photo of Mykola Tarasov"
+                width="270"
+                class="staff__item--frame"
+              />
               <div class="staff__info">
                 <h3 class="staff__name">Микола Тарасов</h3>
                 <p class="staff__position">Marketing</p>
@@ -252,7 +293,12 @@
               </div>
             </li>
             <li class="staff__item">
-              <img src="images/a7.jpg" alt="Photo of Mykhaylo Yermakov" width="270" class="box" />
+              <img
+                src="images/a7.jpg"
+                alt="Photo of Mykhaylo Yermakov"
+                width="270"
+                class="staff__item--frame"
+              />
               <div class="staff__info">
                 <h3 class="staff__name">Михайло Єрмаков</h3>
                 <p class="staff__position">UI Designer</p>
@@ -293,7 +339,7 @@
       </section>
       <!--Customers-->
       <section class="section">
-        <div class="customers__queue">
+        <div class="container">
           <h2 class="customers__title">Постійні клієнти</h2>
           <ul class="customers__card-set">
             <li class="customers__representative">
@@ -345,13 +391,15 @@
     <!--Footer-->
     <footer class="footer">
       <div class="footer__footer-center container">
-        <div>
-            <a href="" class="logo">Web<span class="logo__black--inverse">Studio</span></a>
+        <div class="footer__block">
+          <a href="" class="logo">Web<span class="logo__black--inverse">Studio</span></a>
           <address>
             <p class="footer__street">м. Київ пр-т Лесі Українки, 26</p>
             <ul>
               <li class="footer__item">
-                <a href="mailto:info@devstudio.com" class="footer__address-contact">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="footer__address-contact"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="footer__item">
                 <a href="tel:+380961111111" class="footer__address-contact">+38 096 111 11 11</a>
@@ -359,41 +407,42 @@
             </ul>
           </address>
         </div>
-        <div class="footer__social">
-          <div>
-            <h2 class="footer__join">Приєднуйтеся</h2>
-            <ul class="social__icon-set">
-              <li>
-                <a class="social__icon social__icon--footer" href="">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="social__icon social__icon--footer" href="">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="social__icon social__icon--footer" href="">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="social__icon social__icon--footer" href="">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+        <!-- <div class="footer__social"> -->
+        <div class="footer__block">
+          <h2 class="footer__join">Приєднуйтеся</h2>
+          <ul class="social__icon-set">
+            <li>
+              <a class="social__icon social__icon--footer" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__icon social__icon--footer" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__icon social__icon--footer" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__icon social__icon--footer" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="footer__form">
+        <div class="footer__block">
+          <div>
             <h2 class="footer__form-title">Підпишіться на розсилку</h2>
             <form class="footer__form-details" autocomplete="on">
               <label for="email"></label>
@@ -408,15 +457,16 @@
               <!-- <input type="radio" value="junior" name="" id=""> -->
               <!-- <input type="datetime-local" name="date" id="date"> -->
               <!-- <input type="file"> -->
-              <button class="footer__button" type="submit">
-                Підписатися
-                <svg class="footer__button-form" width="24" height="24">
-                  <use href="./images/icons.svg#telegram"></use>
-                </svg>
-              </button>
             </form>
           </div>
+          <button class="footer__button" type="submit">
+            Підписатися
+            <svg class="footer__button-form" width="24" height="24">
+              <use href="./images/icons.svg#telegram"></use>
+            </svg>
+          </button>
         </div>
+        <!-- </div> -->
       </div>
     </footer>
     <div class="modal__backdrop modal__backdrop--is-hidden" data-modal>
@@ -426,7 +476,7 @@
           <div class="modal__form-field">
             <label class="modal__label" for="name">Ім'я</label>
             <input class="modal__input" type="name" name="name" id="name" autofocus />
-          <svg class="modal__icon" width="12" height="12">
+            <svg class="modal__icon" width="12" height="12">
               <use href="./images/icons.svg#man"></use>
             </svg>
           </div>
@@ -477,5 +527,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
