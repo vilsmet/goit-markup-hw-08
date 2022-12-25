@@ -15,15 +15,61 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Homework 7</title>
+    <title>Homework 8</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!--Header-->
     <header class="header">
+      <div class="header__mobile-menu js-menu-container" data-menu>
+        <ul class="header__form-list">
+          <li class="header__form-item">
+            <a href="./index.html" class="header__link">Студія</a>
+          </li>
+          <li class="header__form-item">
+            <a href="" class="header__link header__link--current">Портфоліо</a>
+          </li>
+          <li class="header__form-item"><a href="" class="header__link">Контакти</a></li>
+        </ul>
+        <div>
+          <ul>
+            <li>
+              <a class="header__form-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li>
+              <a class="header__form-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="header__social-list">
+            <li class="header__social-item">
+              <a class="header__link-social" href="">Instagram</a>
+            </li>
+            <li class="header__social-item">
+              <a class="header__link-social" href="">Twitter</a>
+            </li>
+            <li class="header__social-item">
+              <a class="header__link-social" href="">Facebook</a>
+            </li>
+            <li class="header__social-item">
+             <a class="header__link-social" href="">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="container header__header-center">
-        <a href="" class="logo">Web<span class="logo__black">Studio</span></a>
+        <a href="./index.html" class="logo">Web<span class="logo__black">Studio</span></a>
+        <button
+          type="button"
+          class="header__button js-open-menu js-close-menu data-header__button"
+          data-header__button
+          aria-expanded="false"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="header__icon-close" href="./images/icons.svg#close"></use>
+            <use class="header__icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item">
@@ -343,5 +389,12 @@
         <!-- </div> -->
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

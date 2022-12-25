@@ -1,12 +1,11 @@
 .modal {
-  position: fixed;
-  // z-index: 900;
-  top: 85px;
+  position: absolute;
+  top: 50%;
   left: 50%;
   width: 450px;
   height: 609px;
   background-color: $accent2-color;
-  transform: translate(-50%, 0) translate(0%) scale(100%) rotate(0);
+  transform: translate(-50%, -50%) translate(0%) scale(100%) rotate(0);
   opacity: 1;
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
   padding: 40px;
@@ -17,6 +16,7 @@
 }
 .modal__backdrop {
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 100%;

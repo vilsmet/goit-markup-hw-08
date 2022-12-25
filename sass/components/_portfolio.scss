@@ -3,11 +3,20 @@
 }
 .portfolio__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  row-gap: 15px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .portfolio__button:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 .portfolio__button-gray {
   cursor: pointer;
@@ -34,15 +43,19 @@
 }
 .portfolio__card-set {
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 30px;
 }
-/*top goes to main*/
 
 .portfolio__item {
-  flex-basis: calc((100% - 60px) / 3);
+  max-width: 450px;
+  // flex-basis: calc((100% - 60px) / 3);
   display: block;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 
   &:hover,
   &:focus {
