@@ -32,7 +32,7 @@
   // margin-right: auto;
 }
 .header__form-list {
-  margin-bottom: 100px;
+  margin-bottom: auto;
   @media screen and (min-width: 768px) {
     list-style: none;
   }
@@ -176,7 +176,7 @@
   &.is-open {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     transform: translateX(0);
     @media screen and (min-width: 768px) {
       display: none;
