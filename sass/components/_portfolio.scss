@@ -43,9 +43,15 @@
 }
 .portfolio__card-set {
   display: flex;
-  justify-content: start;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .portfolio__item {
@@ -55,6 +61,9 @@
   overflow: hidden;
   @media screen and (min-width: 768px) {
     width: 354px;
+  }
+   @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 
   &:hover,

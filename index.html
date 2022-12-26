@@ -52,7 +52,7 @@
               <a class="header__link-social" href="">Facebook</a>
             </li>
             <li class="header__social-item">
-             <a class="header__link-social" href="">Linkedin</a>
+              <a class="header__link-social" href="">Linkedin</a>
             </li>
           </ul>
         </div>
@@ -171,15 +171,33 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__card-set">
             <li class="work__item">
-              <img src="images/a1.jpg" alt="HTML code typing" width="370" class="box" />
+              <img
+                srcset="./images/a1.jpg 1x, ./images/a1@2x.jpg 2x"
+                src="images/a1.jpg"
+                alt="HTML code typing"
+                width="370"
+                class="box"
+              />
               <p class="work__details">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <img src="images/a2.jpg" alt="Page stylization" width="370" class="box" />
+              <img
+                srcset="./images/a2.jpg 1x, ./images/a2@2x.jpg 2x"
+                src="images/a2.jpg"
+                alt="Page stylization"
+                width="370"
+                class="box"
+              />
               <p class="work__details">Мобільні додатки</p>
             </li>
             <li class="work__item">
-              <img src="images/a3.jpg" alt="Color palette" width="370" class="box" />
+              <img
+                srcset="./images/a3.jpg 1x, ./images/a3@2x.jpg 2x"
+                src="images/a3.jpg"
+                alt="Color palette"
+                width="370"
+                class="box"
+              />
               <p class="work__details">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -192,6 +210,7 @@
           <ul class="staff__card-set">
             <li class="staff__item">
               <img
+                srcset="./images/a4.jpg 1x, ./images/a4@2x.jpg 2x"
                 src="images/a4.jpg"
                 alt="Photo of Igor Demyanenko"
                 width="270"
@@ -234,6 +253,7 @@
             </li>
             <li class="staff__item">
               <img
+                srcset="./images/a5.jpg 1x, ./images/a5@2x.jpg 2x"
                 src="images/a5.jpg"
                 alt="Photo of Olga Riepina"
                 width="270"
@@ -276,6 +296,7 @@
             </li>
             <li class="staff__item">
               <img
+                srcset="./images/a6.jpg 1x, ./images/a6@2x.jpg 2x"
                 src="images/a6.jpg"
                 alt="Photo of Mykola Tarasov"
                 width="270"
@@ -318,6 +339,7 @@
             </li>
             <li class="staff__item">
               <img
+                srcset="./images/a7.jpg 1x, ./images/a7@2x.jpg 2x"
                 src="images/a7.jpg"
                 alt="Photo of Mykhaylo Yermakov"
                 width="270"
@@ -499,21 +521,21 @@
         <form autocomplete="on">
           <div class="modal__form-field">
             <label class="modal__label" for="name">Ім'я</label>
-            <input class="modal__input" type="name" name="name" id="name" autofocus />
+            <input class="modal__input" type="text" name="name" id="name" autofocus />
             <svg class="modal__icon" width="12" height="12">
               <use href="./images/icons.svg#man"></use>
             </svg>
           </div>
           <div class="modal__form-field">
             <label class="modal__label" for="phone">Телефон</label>
-            <input class="modal__input" type="phone" name="phone" id="phone" autofocus />
+            <input class="modal__input" type="tel" name="phone" id="phone" />
             <svg class="modal__icon" width="13" height="13">
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
           <div class="modal__form-field">
-            <label class="modal__label" for="email">Пошта</label>
-            <input class="modal__input" type="email" name="email" id="email" autofocus />
+            <label class="modal__label" for="e-mail">Пошта</label>
+            <input class="modal__input" type="email" name="email" id="e-mail" />
             <svg class="modal__icon" width="15" height="12">
               <use href="./images/icons.svg#letter"></use>
             </svg>
@@ -527,7 +549,6 @@
               id="comment"
               cols="30"
               rows="5"
-              autofocus
             ></textarea>
           </div>
           <div class="modal__conditions">
