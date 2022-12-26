@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -308,14 +309,13 @@ img {
   text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.167;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (mшт-width: 1200px) {
   .logo {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.167;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
