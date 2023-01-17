@@ -1354,7 +1354,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal__checkbox:checked ~ .modal__check {
-    transform: translate(14px, -50%);
+    transform: translate(0, -50%);
   }
 }
 
